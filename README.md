@@ -1,4 +1,4 @@
-# ASP.NET Core 3.1 project from TEDU
+# ASP.NET Core 3.1 project 
 ## Technologies
 - ASP.NET Core 3.1
 - Entity Framework Core 3.1
@@ -6,6 +6,3 @@
 - Microsoft.EntityFrameworkCore.SqlServer
 - Microsoft.EntityFrameworkCore.Tools
 - Microsoft.EntityFrameworkCore.Design
-## Youtube tutorial
-## How to configure and run
-## How to contribute
