@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BShopSolution.Utilities\BShopSolution.Utilities.csproj" />
     <ProjectReference Include="..\BShopSolution.ViewModels\BShopSolution.ViewModels.csproj" />
+    <ProjectReference Include="..\BShopSolutions.Data\BShopSolutions.Data.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,7 +1,7 @@
-﻿using Bshop.Data.EF;
-using BShopSolution.ViewModels.Catalog.Products;
+﻿using BShopSolution.ViewModels.Catalog.Products;
 
 using BShopSolution.ViewModels.Common;
+using BShopSolutions.Data.EF;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,10 +1,9 @@
-﻿using Bshop.Data.EF;
-using Bshop.Data.Entities;
-using BShopSolution.Data.Entities;
-using BShopSolution.Utilities.Exceptions;
+﻿using BShopSolution.Utilities.Exceptions;
 using BShopSolution.ViewModels.Catalog.Products;
 using BShopSolution.ViewModels.Common;
 using BShopSolutions.Application.Common;
+using BShopSolutions.Data.EF;
+using BShopSolutions.Data.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using System;
