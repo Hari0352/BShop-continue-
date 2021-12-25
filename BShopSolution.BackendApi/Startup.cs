@@ -1,6 +1,10 @@
+using BShopSolution.Utilities.Contains;
+using BShopSolutions.Application.Catalog.Products;
+using BShopSolutions.Data.EF;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -23,6 +27,11 @@ namespace BShopSolution.BackendApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<BShopDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString(SystemContains.MainConnectionString)));
+
+            services.AddTransient<IPublicProductService, PublicProductService>();
+
             services.AddControllersWithViews();
         }
 

@@ -4,4 +4,11 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BShopSolution.Utilities\BShopSolution.Utilities.csproj" />
+    <ProjectReference Include="..\BShopSolution.ViewModels\BShopSolution.ViewModels.csproj" />
+    <ProjectReference Include="..\BShopSolutions.Application\BShopSolutions.Application.csproj" />
+    <ProjectReference Include="..\BShopSolutions.Data\BShopSolutions.Data.csproj" />
+  </ItemGroup>
+
 </Project>
