@@ -1,13 +1,11 @@
 ﻿using Bshop.Data.EF;
-using BShopSolution.Application.Catalog.Products.Dtos;
-using BShopSolution.Application.Catalog.Products.Dtos.Public;
-using BShopSolution.Application.Dtos;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
-using System.Linq;
+using BShopSolution.ViewModels.Catalog.Products;
+using BShopSolution.ViewModels.Catalog.Products.Public;
+using BShopSolution.ViewModels.Common;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace BShopSolution.Application.Catalog.Products
 {

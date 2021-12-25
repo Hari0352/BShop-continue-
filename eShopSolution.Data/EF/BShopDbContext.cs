@@ -2,6 +2,7 @@
 using Bshop.Data.Entities;
 using Bshop.Data.Extensions;
 using BShopSolution.Data.Configurations;
+using BShopSolution.Data.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -77,7 +78,7 @@ namespace Bshop.Data.EF
 
         public DbSet<Transaction> Transactions { get; set; }
 
-
+        public DbSet<ProductImage> ProductImages { get; set; }
 
     }
 }

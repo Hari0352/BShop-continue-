@@ -1,9 +1,8 @@
-﻿using BShopSolution.Application.Catalog.Products.Dtos;
-using BShopSolution.Application.Catalog.Products.Dtos.Manage;
-using BShopSolution.Application.Dtos;
-using System;
+﻿using BShopSolution.ViewModels.Catalog.Products;
+using BShopSolution.ViewModels.Catalog.Products.Manage;
+using BShopSolution.ViewModels.Common;
+using Microsoft.AspNetCore.Http;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace BShopSolution.Application.Catalog.Products
@@ -24,5 +23,13 @@ namespace BShopSolution.Application.Catalog.Products
 
         
         Task<PagedResult<ProductViewModel>> GetAllPaging(GetProductPagingRequest request);
+ 
+        Task<int> AddImages(int productId, List<IFormFile> files);
+
+        Task<int> RemoveImages(int imageId);
+
+        Task<int> UpdateImages(int imageId,string caption,bool isDefault);
+
+        Task<List<ProductImageViewModel>> GetListImage(int productId);
     }
 }

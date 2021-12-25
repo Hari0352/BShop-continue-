@@ -1,9 +1,6 @@
-﻿using BShopSolution.Application.Catalog.Products.Dtos;
-using BShopSolution.Application.Catalog.Products.Dtos.Public;
-using BShopSolution.Application.Dtos;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using BShopSolution.ViewModels.Catalog.Products;
+using BShopSolution.ViewModels.Catalog.Products.Public;
+using BShopSolution.ViewModels.Common;
 using System.Threading.Tasks;
 
 namespace BShopSolution.Application.Catalog.Products
