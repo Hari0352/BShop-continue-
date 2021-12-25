@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BShopSolution.Application.Catalog.Products.Dtos
+namespace BShopSolution.Application.Dtos
 {
-    public class PageViewModel<T>
+    public class PagedResult<T>
     {
-        List<T> Items { get; set; }
+        public List<T> Items { get; set; }
         public int TotalRecord { get; set; }
     }
 }
