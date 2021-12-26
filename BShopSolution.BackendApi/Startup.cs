@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,6 +33,15 @@ namespace BShopSolution.BackendApi
 
             services.AddTransient<IPublicProductService, PublicProductService>();
 
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "Swagger BShopSolution",
+                    Version = "v1",                  
+                });
+            });
+
             services.AddControllersWithViews();
         }
 
@@ -54,6 +64,15 @@ namespace BShopSolution.BackendApi
             app.UseRouting();
 
             app.UseAuthorization();
+
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", " Swagger BShopSolution V1");
+             
+            });
 
             app.UseEndpoints(endpoints =>
             {
